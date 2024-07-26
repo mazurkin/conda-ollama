@@ -31,6 +31,11 @@ shell:
 	@conda run --no-capture-output --live-stream --name $(CONDA_ENV_NAME) \
 		bash
 
+.PHONY: term
+term:
+	@conda run --no-capture-output --live-stream --name $(CONDA_ENV_NAME) \
+		oterm
+
 .PHONY: env-create
 env-create:
 	@conda env create --name $(CONDA_ENV_NAME) --file $(CONDA_ENV_FULL_FILE)
