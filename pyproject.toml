@@ -22,8 +22,10 @@ tenacity = "8.2.2"
 numpy = "1.26.4"
 plotly = "5.23"
 seaborn = "0.13.2"
-filelock = "3.15.4"
 ollama = "0.3.1"
+
+[tool.poetry.group.fix.dependencies]
+filelock = "3.15.4"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "7.1.1"
